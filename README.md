@@ -1,18 +1,20 @@
 # HelloWorld-PC9801
 OSなしのPC-9801で実行できるHelloWorldブートローダです。  
-ついでにBeepを鳴らすおまけ付きです。
+ついでにBeepを鳴らすおまけ付きです。  
+<img src="https://i.imgur.com/bCJ6Ma6.jpg" width="300">
+
 ## 実行するには
 ***hello98.TFD*** をフロッピーに書き込めばPC-98シリーズ(以下PC98)で使えます。  
 しかし、ほとんどの人がPC98本体を持っていないと思うので、エミュレータをおすすめします。  
 例えば、
 [「Neko Project II」](https://www.yui.ne.jp/np2/)
-であれば、フロッピードライブに***hello98.TFD*** を設定して起動すればHelloWorld出来ます。
+であれば、フロッピードライブに ***hello98.TFD*** を設定して起動すればHelloWorld出来ます。
 >「Neko Project II」の導入についてはこちら  
 [インストールガイド [導入編]](http://www.retropc.net/yui/np2inst/install.html)
 
 ### 実機で実行するなら
 PC98実機を持っている酔狂な方は以下の手順で実行できます。  
-例えば[「Read/Write FD」](https://www.vector.co.jp/soft/win95/util/se130037.html)などで***hello98.TFD*** をフロッピーディスク(以下FD)にバイナリ書き込みを行います。  
+例えば[「Read/Write FD」](https://www.vector.co.jp/soft/win95/util/se130037.html)などで ***hello98.TFD*** をフロッピーディスク(以下FD)にバイナリ書き込みを行います。  
 この時注意しなければいけないのが、書き込みを行うFDドライブは[「3モードフロッピーディスクドライブ」](https://ja.wikipedia.org/wiki/3%E3%83%A2%E3%83%BC%E3%83%89%E3%83%95%E3%83%AD%E3%83%83%E3%83%94%E3%83%BC%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AF%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96)というものでなければなりません。  
 手に入りやすいものであれば以下のようなものがあります。
 >Amazon  
@@ -29,10 +31,10 @@ ___
 ・***hood*** はプログラムにはあまり関係ないNECのフロッピーフォーマットにデフォルトで書かれてるおまじない部分のバイナリです。（誰か教えて）  
 
 やってることは以下のことだけです。  
-1. ***hello98.nas*** を***hello98.sys*** に***nask.exe*** でアセンブリします。  
-1. ***hello98.sys*** と***hood*** をバイナリ結合して***hello98.TFD*** とします。
+1. ***hello98.nas*** を ***hello98.sys*** に ***nask.exe*** でアセンブリします。  
+1. ***hello98.sys*** と ***hood*** をバイナリ結合して ***hello98.TFD*** とします。
 ____
 ## 謝辞
-アセンブラの***NASK*** は、[「OSASK」](http://wiki.osask.jp/)OSの開発や「30日でできる！ OS自作入門」の著書を行なっている**川合秀実 様** が公開しているものです。  
+アセンブラの ***NASK*** は、[「OSASK」](http://wiki.osask.jp/)OSの開発や「30日でできる！ OS自作入門」の著書を行なっている **川合秀実 様** が公開しているものです。  
 改変・再配布自由ということでしたのでリポジトリに含ませて頂きました。  
 ここに感謝の意を表します。
